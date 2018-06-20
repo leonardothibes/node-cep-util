@@ -3,50 +3,38 @@
 const decorator = require('../../lib/decorator'),
       assert    = require('unit.js');
 
-const cpfs = [
+const ceps = [
     {
-        unMasked: '12345678912',
-        masked  : '123.456.789-12',
-    },
-    {
-        unMasked: '   12345678912',
-        masked  : '   123.456.789-12',
-    },
-    {
-        unMasked: '12345678912   ',
-        masked  : '123.456.789-12   ',
-    },
-    {
-        unMasked: '   12345678912   ',
-        masked  : '   123.456.789-12   ',
+        unMasked: '12345678',
+        masked  : '12345-678',
     },
 ];
 
 describe('Decorator', function()
 {
-    cpfs.forEach(function(cpf)
+    ceps.forEach(function(cep)
     {
-        it('Is Masked: ' + cpf.masked, function(done)
+        it('Is Masked: ' + cep.masked, function(done)
         {
-            assert.bool(decorator.isMasked(cpf.masked)).isTrue();
+            assert.bool(decorator.isMasked(cep.masked)).isTrue();
             done();
         });
 
-        it('Is UnMasked: ' + cpf.unMasked, function(done)
+        it('Is UnMasked: ' + cep.unMasked, function(done)
         {
-            assert.bool(decorator.isMasked(cpf.unMasked)).isFalse();
+            assert.bool(decorator.isMasked(cep.unMasked)).isFalse();
             done();
         });
 
         it('Mask String', function(done)
         {
-            assert.string(decorator.mask(cpf.unMasked)).isEqualTo(cpf.masked.trim());
+            assert.string(decorator.mask(cep.unMasked)).isEqualTo(cep.masked.trim());
             done();
         });
 
         it('Mask Number', function(done)
         {
-            assert.string(decorator.mask(12345678912)).isEqualTo(cpf.masked.trim());
+            assert.string(decorator.mask(12345678)).isEqualTo(cep.masked.trim());
             done();
         });
 
@@ -58,13 +46,13 @@ describe('Decorator', function()
 
         it('UnMask Masked', function(done)
         {
-            assert.string(decorator.unMask(cpf.masked)).isEqualTo(cpf.unMasked.trim());
+            assert.string(decorator.unMask(cep.masked)).isEqualTo(cep.unMasked.trim());
             done();
         });
 
         it('UnMask UnMasked', function(done)
         {
-            assert.string(decorator.unMask(cpf.unMasked)).isEqualTo(cpf.unMasked.trim());
+            assert.string(decorator.unMask(cep.unMasked)).isEqualTo(cep.unMasked.trim());
             done();
         });
     });
