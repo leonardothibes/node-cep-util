@@ -19,22 +19,9 @@ npm install node-cep-util --save
 Examples
 --------
 
-* [CEP Validation](#cep-validation)
 * [CEP Mask](#cep-mask)
 * [CEP UnMask](#cep-unmask)
 * [CEP is Masked](#cep-is-masked)
-
-CEP Validation
---------------
-
-```js
-const cep = require('node-cep-util');
-
-cep.validate('05010-000'); // returns TRUE
-cep.validate('05010000');  // returns TRUE
-
-cep.validate('12345678');  // returns FALSE
-```
 
 CEP Mask
 --------
