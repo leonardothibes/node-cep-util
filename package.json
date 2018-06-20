@@ -1,21 +1,20 @@
 {
-  "name": "node-cpf",
-  "version": "1.0.20",
-  "description": "Funções utilitárias para tratamento de CPF",
+  "name": "node-cep-util",
+  "version": "0.1.0",
+  "description": "Funções utilitárias para tratamento de CEP",
   "main": "index.js",
-  "homepage": "https://github.com/leonardothibes/node-cpf#readme",
+  "homepage": "https://github.com/leonardothibes/node-cep-util#readme",
   "author": "Leonardo Thibes <leonardothibes@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonardothibes/node-cpf.git"
+    "url": "git+https://github.com/leonardothibes/node-cep-util.git"
   },
   "bugs": {
-    "url": "https://github.com/leonardothibes/node-cpf/issues"
+    "url": "https://github.com/leonardothibes/node-cep-util/issues"
   },
   "keywords": [
-    "cpf",
-    "validation",
+    "cep",
     "mask",
     "unmask"
   ],
@@ -56,9 +55,7 @@
       "desc": "Exibe esta mensagem de HELP"
     }
   },
-  "dependencies": {
-    "shuffle-list": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "istanbul": "^0.4.5",
     "jshint": "^2.9.5",
