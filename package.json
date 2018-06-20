@@ -1,6 +1,6 @@
 {
   "name": "node-cep-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Funções utilitárias para tratamento de CEP",
   "main": "index.js",
   "homepage": "https://github.com/leonardothibes/node-cep-util#readme",

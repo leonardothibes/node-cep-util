@@ -1,4 +1,4 @@
-# node-cep-util [![npm](http://img.shields.io/npm/v/node-cep-util.svg)](https://www.npmjs.com/package/node-cep-util) ![Downloads](https://img.shields.io/npm/dm/node-cep-util.svg) [![Build Status](https://secure.travis-ci.org/leonardothibes/node-cep-util.png)](http://travis-ci.org/leonardothibes/node-cep-util) [![Package Quality](http://npm.packagequality.com/shield/node-cep-util.svg)](http://packagequality.com/#?package=node-cep-util) [![License](https://img.shields.io/npm/l/node-cep-util.svg)](LICENSE)
+# cep-util [![npm](http://img.shields.io/npm/v/node-cep-util.svg)](https://www.npmjs.com/package/node-cep-util) ![Downloads](https://img.shields.io/npm/dm/node-cep-util.svg) [![Build Status](https://secure.travis-ci.org/leonardothibes/node-cep-util.png)](http://travis-ci.org/leonardothibes/node-cep-util) [![Package Quality](http://npm.packagequality.com/shield/node-cep-util.svg)](http://packagequality.com/#?package=node-cep-util) [![License](https://img.shields.io/npm/l/node-cep-util.svg)](LICENSE)
 
 Funções utilitárias para tratamento de CEPs
 
