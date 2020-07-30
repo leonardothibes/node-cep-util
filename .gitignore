@@ -13,5 +13,6 @@ Thumbs.db
 build/*
 coverage/*
 node_modules/*
-test.js
 package-lock.json
+test.js
+test.ts
